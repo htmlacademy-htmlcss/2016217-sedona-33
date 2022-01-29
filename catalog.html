@@ -2,13 +2,15 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Sedona</title>
+  <title>HTML Academy: Седона</title>
+  <meta name="keywords" content="Hotel, Гостиницы, Отдых,">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 <header class="header-inner">
   <nav class="navigation">
     <a class="navigation-main-logo" href="index.html">
-      <img class="navigation-logo" src="" alt="Логотип City of Sedona">
+      <img class="navigation-logo" src="images/logo.svg" width="139" height="70" alt="Логотип City of Sedona">
     </a>
     <ul class="navigation-list">
       <li class="navigation-item">
@@ -24,11 +26,13 @@
     <ul class="navigation-list navigation-user">
       <li class="navigation-item">
         <a class="navigation-link" href="#">
+          <img class="navigation-search" src="images/search.svg" width="20" height="19" alt="Поиск по сайту">
           <span class="visually-hidden">Поиск</span>
         </a>
       </li>
       <li class="navigation-item">
         <a class="navigation-link" href="#">
+          <img class="navigation-favorite" src="images/favorite.svg" width="19" height="17" alt="Избранные гостиницы">
           <span class="visually-hidden">Избранное</span>
         </a>
       </li>
@@ -44,10 +48,14 @@
     <h1 class="inner-title">Гостиницы Седоны</h1>
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div>
-        <a class="inner-icon-link" href="index.html"><span class="visually-hidden"> Главная</span></a>
+        <a class="inner-icon-link" href="index.html">
+          <img class="breadcrumbs" src="images/01.svg" width="12" height="12"
+               alt="Иконка перенаправлющая на главную страницу">
+          <span class="visually-hidden"> Главная</span></a>
+        <img class="breadcrumbs" src="images/arrow.svg" width="5" height="8" alt="Стрелка">
         <a class="inner-home-icon">Гостиницы</a>
       </div>
-      <ul>
+      <ul class="checklist">
         <li>
           <h2 class="inner-list">Инфраструктура:</h2>
         </li>
@@ -64,7 +72,7 @@
           <label class="control-checklist" for="wifi">Wi-Fi</label>
         </li>
       </ul>
-      <ul>
+      <ul class="checklist">
         <li>
           <h3 class="inner-list">Тип Жилья:</h3>
         </li>
@@ -81,7 +89,7 @@
           <label class="control-checklist" for="aparts">Апартаменты</label>
         </li>
       </ul>
-      <div class="price">
+      <div class="checklist">
         <label for="price-range">Стоимость,р:</label>
         <input id="price-range" type="number">
         <button class="button button-apply" type="submit">Применить</button>
@@ -98,16 +106,22 @@
     <ul>
       <li>
         <a href="#" class="inner-button-select-menu">
+          <img class="breadcrumbs" src="images/breadcrumbs/breadcrumbs3.svg" width="16" height="14"
+               alt="Иконка для изменения вида товаров">
           <span class="visually hidden">Карточки</span>
         </a>
       </li>
       <li>
         <a href="#" class="inner-button-select-menu">
+          <img class="breadcrumbs" src="images/breadcrumbs/breadcrumbs.svg" width="16" height="14"
+               alt="Иконка для изменения вида товаров">
           <span class="visually hidden">Ландшафт</span>
         </a>
       </li>
       <li>
         <a href="#" class="inner-button-select-menu">
+          <img class="breadcrumbs" src="images/breadcrumbs/breadcrumbs2.svg" width="16" height="14"
+               alt="Иконка для изменения вида товаров">
           <span class="visually hidden">Список</span>
         </a>
       </li>
@@ -116,7 +130,8 @@
 
       <ul>
         <li>
-          <img class="inner-hotel-pics" src="" alt="Вид из Amara Resort & Spa">
+          <img class="inner-hotel-pics" src="images/hotels/hotel-1.jpg" width="299" height="206"
+               alt="Вид из Amara Resort & Spa">
           <h3 class="inner-hotel-name">
             Amara Resort & Spa
           </h3>
@@ -129,17 +144,22 @@
             <a class="inner-favorite" href="#"> В Избранное</a>
           </div>
           <div>
-            <a class="star"><span class="visually-hidden">*</span></a>
-            <a class="star"><span class="visually-hidden">*</span></a>
-            <a class="star"><span class="visually-hidden">*</span></a>
-            <a class="star"><span class="visually-hidden">*</span></a>
+            <a class="star"><span class="visually-hidden"></span> <img class="stars" src="images/star.svg" width="18"
+                                                                       height="17" alt="Звезды оценки"> </a>
+            <a class="star"><span class="visually-hidden"></span> <img class="stars" src="images/star.svg" width="18"
+                                                                       height="17" alt="Звезды оценки"> </a>
+            <a class="star"><span class="visually-hidden"></span> <img class="stars" src="images/star.svg" width="18"
+                                                                       height="17" alt="Звезды оценки"> </a>
+            <a class="star"><span class="visually-hidden"></span> <img class="stars" src="images/star.svg" width="18"
+                                                                       height="17" alt="Звезды оценки"> </a>
             <span class="inner-rating-number">РЕЙТИНГ: 8,5</span>
           </div>
         </li>
 
 
         <li>
-          <img class="inner-hotel-pics" src="" alt="Вид из Desert Quail Inn">
+          <img class="inner-hotel-pics" src="images/hotels/hotel-2.jpg" width="299" height="206"
+               alt="Вид из Desert Quail Inn">
           <h3 class="inner-hotel-name">
             Desert Quail Inn
           </h3>
@@ -152,15 +172,22 @@
             <a class="inner-favorite" href="#"> В Избранном</a>
           </div>
           <div>
-            <a class="star"><span class="visually-hidden">*</span></a>
-            <a class="star"><span class="visually-hidden">*</span></a>
-            <a class="star"><span class="visually-hidden">*</span></a>
+            <a class="star"><span class="visually-hidden"></span></a> <img class="stars" src="images/star.svg"
+                                                                           width="18"
+                                                                           height="17" alt="Звезды оценки">
+            <a class="star"><span class="visually-hidden"></span></a> <img class="stars" src="images/star.svg"
+                                                                           width="18"
+                                                                           height="17" alt="Звезды оценки">
+            <a class="star"><span class="visually-hidden"></span></a> <img class="stars" src="images/star.svg"
+                                                                           width="18"
+                                                                           height="17" alt="Звезды оценки">
             <span class="inner-rating-number">РЕЙТИНГ: 8,9</span>
           </div>
         </li>
 
         <li>
-          <img class="inner-hotel-pics" src="" alt="Вид из Villas at Poco Diablo">
+          <img class="inner-hotel-pics" src="images/hotels/hotel-3.jpg" width="299" height="206"
+               alt="Вид из Villas at Poco Diablo">
           <h3 class="inner-hotel-name">
             Villas at Poco Diablo
           </h3>
@@ -170,17 +197,22 @@
           </div>
           <div>
             <a class="inner-more" href="#"> Подробнее</a>
-            <a class="inner-favorite" href="#"> В Избранном</a>
+            <a class="inner-favorite" href="#"> В Избранное</a>
           </div>
           <div>
-            <a class="star"><span class="visually-hidden">*</span></a>
-            <a class="star"><span class="visually-hidden">*</span></a>
+            <a class="star"><span class="visually-hidden"></span></a> <img class="stars" src="images/star.svg"
+                                                                           width="18"
+                                                                           height="17" alt="Звезды оценки">
+            <a class="star"><span class="visually-hidden"></span></a> <img class="stars" src="images/star.svg"
+                                                                           width="18"
+                                                                           height="17" alt="Звезды оценки">
             <span class="inner-rating-number">РЕЙТИНГ: 9,2</span>
           </div>
         </li>
 
         <li>
-          <img class="inner-hotel-pics" src="" alt="Вид из GreenTree Inn">
+          <img class="inner-hotel-pics" src="images/hotels/hotel-4.jpg" width="299" height="206"
+               alt="Вид из GreenTree Inn">
           <h3 class="inner-hotel-name">
             GreenTree Inn
           </h3>
@@ -193,8 +225,12 @@
             <a class="inner-favorite" href="#"> В Избранное</a>
           </div>
           <div>
-            <a class="star"><span class="visually-hidden">*</span></a>
-            <a class="star"><span class="visually-hidden">*</span></a>
+            <a class="star"><span class="visually-hidden"></span></a> <img class="stars" src="images/star.svg"
+                                                                           width="18"
+                                                                           height="17" alt="Звезды оценки">
+            <a class="star"><span class="visually-hidden"></span></a> <img class="stars" src="images/star.svg"
+                                                                           width="18"
+                                                                           height="17" alt="Звезды оценки">
             <span class="inner-rating-number">РЕЙТИНГ: 9,2</span>
           </div>
         </li>
@@ -270,19 +306,24 @@
     <h2 class="visually-hidden">Социальные сети</h2>
     <ul class="footer-social-list">
       <li class="footer-social-item">
-        <a class="social-button" href="https://twitter.com/htmlacademy_ru">
+        <a class="social-button" href="https://twitter.com/htmlacademy_ru" target="_blank">
+          <img class="social-logo" src="images/socials/social-twitter.svg" width="18" height="15"
+               alt="Логотип Твиттера">
           <span class="visually hidden">Твиттер</span>
         </a>
       </li>
 
       <li class="footer-social-item">
-        <a class="social-button" href="https://www.facebook.com/htmlacademy">
+        <a class="social-button" href="https://www.facebook.com/htmlacademy" target="_blank">
+          <img class="social-logo" src="images/socials/social-facebook.svg" width="10" height="18"
+               alt="Логотип Фейсбука">
           <span class="visually hidden">Фейсбук</span>
         </a>
       </li>
 
       <li class="footer-social-item">
-        <a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+        <a class="social-button" href="https://www.youtube.com/c/HTMLAcademyRUS" target="_blank">
+          <img class="social-logo" src="images/socials/social-youtube.svg" width="20" height="16" alt="Логотип Ютуба">
           <span class="visually hidden">Ютуб</span>
         </a>
       </li>
@@ -297,8 +338,9 @@
   </div>
 
   <div>
-    <a class="footer-bottom-logo" href="https://htmlacademy.ru/">
-      <img class="bottom-logo" src="" alt="Нижний логотип HTML ACADEMY"></a>
+    <a class="footer-bottom-logo" href="https://htmlacademy.ru/" target="_blank">
+      <img class="bottom-logo" src="images/socials/social-htmlacademy.svg" width="115" height="33"
+           alt="Нижний логотип HTML ACADEMY"></a>
   </div>
 </footer>
 </body>
