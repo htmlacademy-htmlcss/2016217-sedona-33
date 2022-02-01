@@ -332,7 +332,7 @@ li {
   text-transform: uppercase;
 }
 
-/**
+/* Убрать ненужные элементы *
 .visually-hidden {
   opacity: 0;
-}/
+}
