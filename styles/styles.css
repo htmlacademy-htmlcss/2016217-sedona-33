@@ -16,24 +16,27 @@ font-display: swap;
 font-display: swap;
 }
 
+/* Глобальные селекторы */
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
   line-height: 26px;
   color: black;
   background-color: white;
+  margin: 0;
 }
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 
 /* Шапка сайта */
 
 .page-header {
   color: black;
   background-color: white;
-}
-
-.logo {
-  margin: 0 auto;
-  display: block;
 }
 
 .navigation-link {
@@ -44,11 +47,26 @@ body {
 }
 
 .logo-visual {
-  background-size: 100% auto;
   background-image: url("../images/index-background.jpg");
   color: black;
   background-color: white;
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 485px;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+  background-image: url("../images/welcome.svg");
+  background-repeat: no-repeat;
+
+}
+
+.navigation-link-search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+
 }
 
 .main-description {
@@ -227,6 +245,24 @@ li {
   line-height: 23px;
 }
 
+.inner-hotel-4stars {
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 74px;
+}
+
+.inner-hotel-3stars {
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 55px;
+}
+
+.inner-hotel-2stars {
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 37px;
+}
+
 .inner-rating-number {
   font-weight: normal;
   font-size: 16px;
@@ -295,3 +331,8 @@ li {
   text-align: center;
   text-transform: uppercase;
 }
+
+/**
+.visually-hidden {
+  opacity: 0;
+}/
