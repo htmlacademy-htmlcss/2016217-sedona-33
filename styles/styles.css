@@ -1,0 +1,338 @@
+/*  Шрифты  */
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2"); format("woff2")
+font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans 700";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2"); format("woff2")
+font-display: swap;
+}
+
+/* Глобальные селекторы */
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
+  line-height: 26px;
+  color: black;
+  background-color: white;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+
+/* Шапка сайта */
+
+.page-header {
+  color: black;
+  background-color: white;
+}
+
+.navigation-link {
+  color: inherit;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.logo-visual {
+  background-image: url("../images/index-background.jpg");
+  color: black;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 485px;
+}
+
+.logo {
+  margin: 0 auto;
+  display: block;
+  background-image: url("../images/welcome.svg");
+  background-repeat: no-repeat;
+
+}
+
+.navigation-link-search {
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+
+}
+
+.main-description {
+  margin-top: 20px;
+
+}
+
+.main-description-text {
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 36px;
+}
+
+.description-subtitle {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  line-height: 36px;
+}
+
+/* Преимущества Седоны */
+
+.sedona-adventages {
+  text-align: center;
+}
+
+.sedona-adventages-description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+.adventage-numbers {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.adventages-subtitle {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+/* Запись */
+
+.sedona-services-main {
+  font-weight: 700;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
+}
+
+.sedona-services-description {
+  font-weight: 400;
+  font-size: 22px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.search-button {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Рассылка  */
+
+.mailing {
+  background-color: black;
+  background-image: url("../images/email-blurry-background.jpg");
+  background-size: 100%;
+}
+
+.mailing-title {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  line-height: 36px;
+}
+
+.mailing-description {
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 26px;
+  color: white;
+}
+
+.mailing-email {
+  text-align: center;
+}
+
+/* Каталог/Сортировка опций */
+
+.inner-options {
+  background-image: url("../images/inner-background.jpg");
+  background-size: cover;
+  background-color: white;
+  background-repeat: no-repeat;
+  color: black;
+}
+
+.inner-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: white;
+}
+
+.inner-list {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 26px;
+  color: white;
+}
+
+.control-checklist {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23px;
+  color: white;
+}
+
+.inner-home-icon {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+/* Сортировка Гостиниц по Селектору */
+
+.inner-found-hotels {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 39px;
+  text-transform: uppercase;
+}
+
+.inner-select-item {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 23px;
+}
+
+/* Виды Гостиниц на сайте   */
+
+.inner-hotel-name {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.inner-hotel-type {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.inner-hotel-price {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.inner-hotel-4stars {
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 74px;
+}
+
+.inner-hotel-3stars {
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 55px;
+}
+
+.inner-hotel-2stars {
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
+  width: 37px;
+}
+
+.inner-rating-number {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.inner-more {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.inner-favorite {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+/* Загрузить ещё */
+
+.inner-upload-more {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Гостиниц на сайте */
+
+.hotel.onsite {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* Рассылка Каталог*/
+
+.mailing-title-catalog {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  line-height: 36px;
+}
+
+.mailing-description-catalog {
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 26px;
+  color: black;
+}
+
+.mailing-sub {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Убрать ненужные элементы *
+.visually-hidden {
+  opacity: 0;
+}
