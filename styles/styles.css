@@ -20,11 +20,15 @@ font-display: swap;
 
 html {
   height: 100%;
+
 }
 
 body {
   font-family: "PT Sans", sans-serif;
   font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   color: black;
   margin: 0;
   background-color: #F2F2F2;
@@ -53,6 +57,7 @@ img {
 .main-container {
   width: 1200px;
   display: block;
+  flex-grow: 1;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -60,11 +65,6 @@ img {
 .page-header {
   color: black;
   background-color: white;
-}
-
-.navigation-list {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .navigation-link {
@@ -88,23 +88,16 @@ img {
 
 .welcome-logo {
   margin: 0 auto;
-  display: block;
   background-image: url("../images/welcome.svg");
   background-repeat: no-repeat;
   width: 458px;
   height: 412px;
-  background-position-y: 10px;
 
 }
 
 .navigation-link-search {
   background-image: url("../images/search.svg");
   background-repeat: no-repeat;
-
-}
-
-.main-description {
-  margin-top: 20px;
 
 }
 
@@ -198,8 +191,27 @@ img {
   color: white;
 }
 
-.mailing-email {
-  text-align: center;
+.field {
+  justify-content: center;
+  display: inline-block;
+  width: 600px;
+  height: 60px;
+  border: hidden;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 30px;
+  font-size: 18px;
+  background-color: #F2F2F2;
+}
+
+.mailing-sub {
+  height: 60px;
+  background-color: #82b3d3;
+  border: hidden;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 0 20px;
 }
 
 /* Каталог/Сортировка опций */
@@ -210,6 +222,7 @@ img {
   background-color: white;
   background-repeat: no-repeat;
   color: black;
+  padding-bottom: 83px;
 }
 
 .inner-icon-link {
@@ -222,6 +235,8 @@ img {
   line-height: 78px;
   color: white;
   margin: 0;
+  padding-top: 35px;
+  padding-left: 71px;
 }
 
 .inner-list {
@@ -377,14 +392,23 @@ li {
 /* Убрать ненужные элементы */
 
 .visually-hidden {
-  opacity: 0;
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* Флексы / Выставления размеров */
+
+/** Шапка **/
+
 .navigation-main-logo {
-  padding-left: 70px;
-  padding-right: 30px;
+  margin-right: 30px;
+  margin-left: 70px;
 }
 
 .main-conteiner {
@@ -393,25 +417,53 @@ li {
 
 .navigation {
   display: flex;
+  margin: 0 auto;
 }
 
 .navigation-list {
+  display: flex;
   margin: 0;
   padding: 0;
+  width: 445px;
 }
 
 .navigation-user {
   margin-left: auto;
-  padding-right: 70px;
+  width: 300px;
+  min-width: 18px;
+  min-height: 17px;
+  align-items: center;
 }
+
+.navigation-item-search {
+  background-color: #756157;
+  width: 160px;
+  height: 37px;
+  color: #ffffff;
+  align-items: center;
+  margin-top: 13px;
+  margin-bottom: 19px;
+  display: flex;
+  justify-content: center;
+}
+
 
 .page-container {
   margin: 0 auto;
 }
 
-.main-description {
-  margin: 0 auto;
+/** Логотип  и Описание **/
+
+.logo-visual {
+  padding-top: 51px;
 }
+
+.main-description {
+  margin-top: 63px;
+  margin-bottom: 80px
+}
+
+/** Преимущества Седоны **/
 
 .feature-preview {
   width: 400px;
@@ -419,21 +471,21 @@ li {
   margin: 0;
 }
 
-.footer-container {
-  display: flex;
-  margin: 0 auto;
-  justify-content: space-between;
-  background-color: #fff;
-}
-
 .advantages-list {
   display: flex;
 }
+
+.feature-preview-second {
+  display: flex;
+}
+
+/** Запись **/
 
 .sedona-services {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 93px;
 }
 
 .search-button {
@@ -448,8 +500,25 @@ li {
   text-decoration: none;
 }
 
-.feature-preview-second {
+/** Рассылка **/
+
+.mailing-container {
+  padding-bottom: 93px;
+}
+
+.mailing-email {
+  text-align: center;
   display: flex;
+  justify-content: center;
+}
+
+/** Футер **/
+
+.footer-container {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: #fff;
 }
 
 .footer-social-list {
@@ -473,12 +542,45 @@ li {
   justify-content: space-between;
 }
 
-.checklist-catalog {
+/** Сортировка Гостиниц **/
+
+.catalog-sorting-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.inner-found-hotels {
+  margin-left: 71px;
+  margin-right: 192px;
+}
+
+.inner-select-menu {
+
+}
+
+.breadcrumbs-icon {
+  display: flex;
+  padding-left: 73px;
+
+}
+
+.checklist-infrastructure {
+  padding-left: 71px;
+  padding-right: 67px;
+}
+
+.checklist-type {
+  padding-left: 67px;
+  padding-right: 216px;
+}
+
+.price-range {
   display: flex;
   flex-direction: column;
   align-self: stretch;
   margin: 40px;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .catalog-buttons {
@@ -491,20 +593,19 @@ li {
 
 /* Cортировка */
 
-.catalog-sorting {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 72px;
-  padding-right: 72px;
-  align-items: center;
-}
-
 .breadcrumbs {
   display: flex;
+  padding: 0;
+  align-items: center;
+  margin-right: 72px;
 }
 
 .inner-button-select-menu {
-  padding-right: 24px;
+  background-color: white;
+  color: black;
+  width: 48px;
+  height: 48px;
+  margin-right: 8px
 
 }
 
@@ -549,6 +650,14 @@ li {
 
   margin-right: 50px;
   margin-left: auto;
+}
+
+.inner-select-list-count {
+  width: 160px;
+  height: 48px;
+  margin-right: 72px;
+  padding-left: 17px;
+  margin-left: 51px;
 }
 
 .pagination {
