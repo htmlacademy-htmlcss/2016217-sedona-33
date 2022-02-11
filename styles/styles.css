@@ -463,6 +463,15 @@ li {
   margin-bottom: 80px
 }
 
+.main-description-text {
+  margin: 0;
+}
+
+.description-subtitle {
+  margin: 31px 0 0;
+}
+
+
 /** Преимущества Седоны **/
 
 .feature-preview {
@@ -488,6 +497,14 @@ li {
   margin-bottom: 93px;
 }
 
+.sedona-services-main {
+  margin: 91px 0 29px;
+}
+
+.sedona-services-description {
+  margin: 29px 0 56px;
+}
+
 .search-button {
   display: block;
   width: 575px;
@@ -502,8 +519,18 @@ li {
 
 /** Рассылка **/
 
-.mailing-container {
+.mailing {
   padding-bottom: 93px;
+}
+
+.mailing-title {
+  padding: 94px 0 29px;
+  margin: 0;
+}
+
+.mailing-description {
+  padding: 29px 0 46px;
+  margin: 0;
 }
 
 .mailing-email {
@@ -530,17 +557,39 @@ li {
 }
 
 /* Флексы в Каталоге */
-.catalog-container {
+/*.catalog-container {
   display: flex;
   margin: 0 auto;
   flex-direction: column;
-}
+}*/
 
 .catalog-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
+.checklist-infrastructure {
+  padding-left: 71px;
+  padding-right: 67px;
+  margin: 0;
+}
+
+.checklist-type {
+  padding-left: 67px;
+  padding-right: 216px;
+  margin: 0;
+}
+
+.price-range {
+  display: flex;
+  flex-direction: column;
+  align-self: stretch;
+  margin: 0;
+  padding: 21px;
+  justify-content: space-between;
+}
+
 
 /** Сортировка Гостиниц **/
 
@@ -562,25 +611,6 @@ li {
 .breadcrumbs-icon {
   display: flex;
   padding-left: 73px;
-
-}
-
-.checklist-infrastructure {
-  padding-left: 71px;
-  padding-right: 67px;
-}
-
-.checklist-type {
-  padding-left: 67px;
-  padding-right: 216px;
-}
-
-.price-range {
-  display: flex;
-  flex-direction: column;
-  align-self: stretch;
-  margin: 40px;
-  justify-content: space-between;
 }
 
 .catalog-buttons {
@@ -679,6 +709,19 @@ li {
 .pagination-link.current {
   background-color: #F2F2F2;
   color: black;
-
 }
+
+.mailing-catalog {
+  margin-bottom: 140px;
+}
+
+.mailing-title-catalog {
+  margin: 73px 0 0;
+}
+
+.mailing-description-catalog {
+  padding: 46px 0 46px;
+  margin: 0;
+}
+
 
