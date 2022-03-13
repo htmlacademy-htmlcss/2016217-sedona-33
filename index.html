@@ -89,7 +89,8 @@
             <h2 class="sedona-adventages-description">Настоящий
               городок</h2>
             <p class="adventage-numbers">№1</p>
-            <p class="adventages-subtitle">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            <p class="adventages-subtitle">Седона — не аттракцион для туристов, там течёт
+              своя жизнь</p>
           </div>
         </div>
         <div class="icon-advantages">
@@ -252,5 +253,58 @@
         <span class="visually-hidden">HTML ACADEMY LOGO</span></a></div>
   </div>
 </footer>
+<div class="pop-up active">
+  <div class="pop-content">
+    <span class="pop-header-container">
+      <p class="pop-header">Поиск гостиницы в Седоне</p>
+      <img class="close-button-pop" src="images/close.svg" alt="">
+    </span>
+    <span class="pop-checkin-date">
+       <label for="checkin">
+      <p class="pop-header-inside">Дата заезда:</p>
+         </label>
+      <input class="checkin" type="date" id="checkin" placeholder="">
+    </span>
+    <span class="pop-checkout-date">
+       <label for="checkout">
+      <p class="pop-header-inside">Дата выезда:</p>
+         </label>
+      <input class="checkout" type="date" id="checkout">
+    </span>
+    <span class="people-count">
+      <label for="count">
+        <p class="pop-header-inside">Взрослые:</p>
+      </label>
+          <span class="people-count-right">
+      <span class="wrapper-counter">
+        <img class="plus" src="images/popover/plus.svg" alt="">
+        <img class="minus" src="images/popover/minus.svg" alt="">
+        <input class="people-counter" type="number" id="count" value="1">
+      </span>
+    </span>
+          <span class="kids-number">
+      <label for="kids">
+        <p class="pop-header-inside">Дети:</p>
+      </label>
+
+      <div class="tooltip">
+        <img class="information-icon" src="images/popover/date-infomation-icon.svg" alt="">
+        <span class="tooltiptext">Укажите количество детей, которые будут с вами,
+                возраст которых от 6 до 18 лет.
+                Дети до 6 лет размещаются бесплатно.</span>
+      </div>
+
+      <span class="people-counter">
+              <span class="wrapper-counter">
+        <img class="plus-right" src="images/popover/plus.svg" alt="">
+        <img class="minus-right" src="images/popover/minus.svg" alt="">
+        <input class="people-counter" type="number" id="kids" value="0">
+      </span>
+      </span>
+    </span>
+    </span>
+    <button class="pop-over-button">Найти</button>
+  </div>
+</div>
 </body>
 </html>
