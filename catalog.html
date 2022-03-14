@@ -81,39 +81,75 @@
           <h2 class="inner-list">Инфраструктура:</h2>
         </li>
         <li>
-          <input checked class="control-list" id="pool" name="Бассейн" type="checkbox">
-          <label class="control-checklist" for="pool">Бассейн</label>
+          <label class="control">
+            <input checked class="control-list visually-hidden" id="pool" name="Бассейн" type="checkbox">
+            <span class="control-mark"></span>
+            <span class="control-label">Бассейн</span>
+          </label>
         </li>
         <li>
-          <input checked class="control-list" id="parking" name="Парковка" type="checkbox">
-          <label class="control-checklist" for="parking">Парковка</label>
+          <label class="control">
+            <input checked class="control-list visually-hidden" id="parking" name="Парковка" type="checkbox">
+            <span class="control-mark"></span>
+            <span class="control-label">Парковка</span>
+          </label>
         </li>
         <li>
-          <input class="control-list" id="wifi" name="Wi-Fi" type="checkbox">
-          <label class="control-checklist" for="wifi">Wi-Fi</label>
+          <label class="control">
+            <input class="control-list visually-hidden" id="wifi" name="Wi-Fi" type="checkbox">
+            <span class="control-mark"></span>
+            <span class="control-label">Wi-Fi</span>
+          </label>
         </li>
       </ul>
       <ul class="checklist-type">
         <li>
-          <h3 class="inner-list">Тип Жилья:</h3>
+          <h3 class="inner-list">Тип жилья:</h3>
         </li>
         <li>
-          <input checked class="control-list" id="hotel" name="#" type="radio">
-          <label class="control-checklist" for="hotel">Гостиница</label>
+          <label class="control">
+            <input checked class="control-list visually-hidden" id="hotel" name="#" type="radio">
+            <span class="control-mark"></span>
+            <span class="control-label">Гостиница</span>
+          </label>
         </li>
         <li>
-          <input class="control-list" id="motel" name="#" type="radio">
-          <label class="control-checklist" for="motel">Мотель</label>
+          <label class="control">
+            <input class="control-list visually-hidden" id="motel" name="#" type="radio">
+            <span class="control-mark"></span>
+            <span class="control-label">Мотель</span>
+          </label>
         </li>
         <li>
-          <input class="control-list" id="aparts" name="#" type="radio">
-          <label class="control-checklist" for="aparts">Апартаменты</label>
+          <label class="control">
+            <input class="control-list visually-hidden" id="aparts" name="#" type="radio">
+            <span class="control-mark"></span>
+            <span class="control-label">Апартаменты</span>
+          </label>
         </li>
       </ul>
       <div class="price-range">
-        <label class="inner-list" for="price-range">Стоимость,р:</label>
-        <input id="price-range" type="number">
+        <p class="inner-list">Стоимость,Р:</p>
+        <label class="catalog-filter-label">
+          <input class="price-min" type="text" value="0">
+        </label>
+        <label class="catalog-filter-label">
+          <input class="price-max" type="text" value="9000">
+        </label>
+        <div class="range">
+          <div class="range-scale">
+            <div class="range-bar" style="left: 0; width: 236px">
+              <button type="button" class="range-toggle toggle-min">
+                <span class="visually-hidden">Изменить минимальную цену.</span>
+              </button>
+              <button type="button" class="range-toggle toggle-max">
+                <span class="visually-hidden">Изменить максимальную цену.</span>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="catalog-buttons">
         <button class="button button-apply" type="submit">Применить</button>
         <button class="button button-reset" type="reset">Сбросить</button>
