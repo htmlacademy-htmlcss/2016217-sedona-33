@@ -310,7 +310,7 @@ img {
   padding-bottom: 2px;
 }
 
-li {
+.list-style-none {
   list-style: none;
 }
 
@@ -1302,6 +1302,7 @@ li {
   width: 20px;
   height: 20px;
   background: #ffffff;
+  border: 4px solid #FFFFFF;
   border-radius: 50%;
   cursor: pointer;
   border: none;
