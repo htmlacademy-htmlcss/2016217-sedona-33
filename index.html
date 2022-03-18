@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico.ico">
   <meta charset="UTF-8">
   <title>HTML Academy: Седона</title>
   <meta name="keywords" content="Hotel, Гостиницы, Отдых,">
@@ -12,7 +13,8 @@
 <header class="page-header container">
   <nav class="navigation">
     <a class="navigation-main-logo" href="#">
-      <img class="navigation-logo" src="images/logo.svg" width="139" height="70" alt="Логотип Сity of Sedona"></a>
+      <img class="navigation-logo" src="images/sedona-logo.svg" width="139" height="70"
+           alt="Логотип Сity of Sedona"></a>
     <ul class="navigation-list">
       <li class="list-style-none navigation-item">
         <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
@@ -97,7 +99,7 @@
           <ul class="advantages-list">
             <li class="list-style-none second-advantage">
               <div class="icon-first"></div>
-              <h2 class="sedona-icon-advantage-description">Жильё</h2>
+              <h3 class="sedona-icon-advantage-description">Жильё</h3>
               <p class="advantages-icon-subtitle">
                 Рекомендуем пожить
                 в настоящем мотеле,
@@ -139,19 +141,19 @@
               <h2 class="sedona-adventages-description">Небольшая
                 площадь</h2>
               <p class="adventage-numbers">№3</p>
-              <p class="adventages-subtitle">Все достопримечательности находятся очень близко</p>
+              <p class="adventages-subtitle subtitle-six">Все достопримечательности находятся очень близко</p>
             </li>
             <li class="list-style-none seventh-advantage">
               <h2 class="sedona-adventages-description">Красивая
                 дорога</h2>
               <p class="adventage-numbers">№4</p>
-              <p class="adventages-subtitle">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p class="adventages-subtitle subtitle-six">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </li>
             <li class="list-style-none eighth-advantage">
               <h2 class="sedona-adventages-description">Мало
                 туристов</h2>
               <p class="adventage-numbers">№5</p>
-              <p class="adventages-subtitle">Большинство едет в Гранд Каньон и толпится там</p>
+              <p class="adventages-subtitle subtitle-six">Большинство едет в Гранд Каньон и толпится там</p>
             </li>
           </ul>
         </div>
@@ -168,7 +170,7 @@
     </section>
 
     <div class="mailing-container">
-      <section class="mailing">
+      <section class="mailing-main">
         <h2 class="mailing-title">Подпишитесь на рассылку</h2>
         <p class="mailing-description">
           Только полезная информация и никакого спама,
@@ -254,57 +256,59 @@
         <span class="visually-hidden">HTML ACADEMY LOGO</span></a></div>
   </div>
 </footer>
-<div class="pop-up active">
+<div class="pop-up">
   <div class="pop-content">
-    <span class="pop-header-container">
-      <p class="pop-header">Поиск гостиницы в Седоне</p>
-      <img class="close-button-pop" src="images/close.svg" alt="">
-    </span>
-    <span class="pop-checkin-date">
-       <label for="checkin">
-      <p class="pop-header-inside">Дата заезда:</p>
-         </label>
-      <input class="checkin" type="date" id="checkin" placeholder="">
-    </span>
-    <span class="pop-checkout-date">
-       <label for="checkout">
-      <p class="pop-header-inside">Дата выезда:</p>
-         </label>
-      <input class="checkout" type="date" id="checkout">
-    </span>
-    <span class="people-count">
-      <label for="count">
-        <p class="pop-header-inside">Взрослые:</p>
-      </label>
-          <span class="people-count-right">
-      <span class="wrapper-counter">
-        <img class="plus" src="images/popover/plus.svg" alt="">
-        <img class="minus" src="images/popover/minus.svg" alt="">
-        <input class="people-counter" type="number" id="count" value="1">
-      </span>
-    </span>
-          <span class="kids-number">
-      <label for="kids">
-        <p class="pop-header-inside">Дети:</p>
-      </label>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <div class="pop-header-container">
+        <p class="pop-header">Поиск гостиницы в Седоне</p>
+        <img class="close-button-pop" src="images/close.svg" alt="">
+      </div>
+      <div class="pop-checkin-date">
+        <label class="pop-header-inside" for="checkin">
+          Дата заезда
+        </label>
+        <input class="checkin" type="date" id="checkin" name="checkin">
+      </div>
+      <div class="pop-checkout-date">
+        <label class="pop-header-inside" for="checkout">
+          Дата выезда
+        </label>
+        <input class="checkout" type="date" id="checkout" name="checkout">
+      </div>
+      <div class="people-count">
+        <label class="pop-header-inside" for="count">
+          Взрослые:
+        </label>
+        <div class="people-count-right">
+          <div class="wrapper-counter">
+            <img class="plus" src="images/popover/plus.svg" alt="">
+            <img class="minus" src="images/popover/minus.svg" alt="">
+            <input class="people-counter" type="number" id="count" value="1" name="count">
+          </div>
+        </div>
+        <div class="kids-number">
+          <label class="pop-header-inside" for="kids">
+            Дети:
+          </label>
 
-      <div class="tooltip">
-        <img class="information-icon" src="images/popover/date-infomation-icon.svg" alt="">
-        <span class="tooltiptext">Укажите количество детей, которые будут с вами,
+          <div class="tooltip">
+            <img class="information-icon" src="images/popover/date-infomation-icon.svg" alt="">
+            <span class="tooltiptext">Укажите количество детей, которые будут с вами,
                 возраст которых от 6 до 18 лет.
                 Дети до 6 лет размещаются бесплатно.</span>
-      </div>
+          </div>
 
-      <span class="people-counter">
+          <span class="people-counter">
               <span class="wrapper-counter">
         <img class="plus-right" src="images/popover/plus.svg" alt="">
         <img class="minus-right" src="images/popover/minus.svg" alt="">
-        <input class="people-counter" type="number" id="kids" value="0">
+        <input class="people-counter" type="number" id="kids" value="0" name="kids">
       </span>
       </span>
-    </span>
-    </span>
-    <button class="pop-over-button">Найти</button>
+        </div>
+      </div>
+      <button class="pop-over-button">Найти</button>
+    </form>
   </div>
 </div>
 </body>
