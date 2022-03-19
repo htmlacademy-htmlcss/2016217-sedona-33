@@ -94,8 +94,19 @@ img {
   color: black;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 485px;
+  height: 474px;
   background-color: #766458;
+  position: relative;
+}
+
+.logo-visual:after {
+  background-image: url(../images/divider.png);
+  height: 57px;
+  width: 1200px;
+  position: absolute;
+  content: '';
+  background-repeat: no-repeat;
+  bottom: 0;
 }
 
 .welcome-logo {
@@ -203,6 +214,14 @@ img {
   background-color: black;
   background-image: url("../images/email-blurry-background.jpg");
   background-size: 100%;
+  padding-bottom: 44px;
+}
+
+.mailing-main {
+  background-color: black;
+  background-image: url("../images/email-blurry-background.jpg");
+  background-size: 100%;
+  padding-bottom: 90px;
 }
 
 .mailing-title {
@@ -224,7 +243,7 @@ img {
 
 .mailing-sub-subscribe {
   width: 200px;
-  font-size: 17px !important;
+  font-size: 17px;
 }
 
 .field {
@@ -518,7 +537,7 @@ img {
 
 .mailing-sub {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -585,7 +604,7 @@ img {
 }
 
 .main-description {
-  margin-top: 53px;
+  margin-top: 63px;
   margin-bottom: 54px
 }
 
@@ -659,13 +678,6 @@ img {
 
 /** Рассылка **/
 
-.mailing {
-  padding-bottom: 44px;
-}
-
-.mailing-main {
-  padding-bottom: 90px;
-}
 
 .mailing-title {
   padding: 94px 0 5px;
