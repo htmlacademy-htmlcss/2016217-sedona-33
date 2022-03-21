@@ -256,7 +256,7 @@
         <span class="visually-hidden">HTML ACADEMY LOGO</span></a></div>
   </div>
 </footer>
-<div class="pop-up">
+<div class="pop-up active">
   <div class="pop-content">
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div class="pop-header-container">
@@ -264,30 +264,36 @@
         <img class="close-button-pop" src="images/close.svg" alt="" width="53" height="53">
       </div>
       <div class="pop-checkin-date">
-        <label class="pop-header-inside" for="checkin">
+        <label class="pop-header-inside label-control" for="checkin">
           Дата заезда
         </label>
         <input class="checkin" type="date" id="checkin" name="checkin">
       </div>
       <div class="pop-checkout-date">
-        <label class="pop-header-inside" for="checkout">
+        <label class="pop-header-inside label-control " for="checkout">
           Дата выезда
         </label>
         <input class="checkout" type="date" id="checkout" name="checkout">
       </div>
       <div class="people-count">
-        <label class="pop-header-inside" for="count">
+        <label class="pop-header-inside label-control" for="count">
           Взрослые:
         </label>
         <div class="people-count-right">
           <div class="wrapper-counter">
-            <img class="plus" src="images/popover/plus.svg" alt="" width="13" height="13">
-            <img class="minus" src="images/popover/minus.svg" alt="" width="13" height="1">
+            <!--<img class="plus" src="images/popover/plus.svg" alt="" width="13" height="13">-->
+            <!--<img class="minus" src="images/popover/minus.svg" alt="" width="13" height="1">-->
+            <button class="pop-up-buttons pop-up-button-minus">
+              <span class="visually-hidden">минус</span>
+            </button>
             <input class="people-counter" type="number" id="count" value="1" name="count">
+            <button class="pop-up-buttons pop-up-button-plus">
+              <span class="visually-hidden">плюс</span>
+            </button>
           </div>
         </div>
         <div class="kids-number">
-          <label class="pop-header-inside" for="kids">
+          <label class="pop-header-inside label-control pop-up-inside-children" for="kids">
             Дети:
           </label>
 
@@ -298,13 +304,19 @@
                 Дети до 6 лет размещаются бесплатно.</span>
           </div>
 
-          <span class="people-counter">
-              <span class="wrapper-counter">
-        <img class="plus-right" src="images/popover/plus.svg" alt="" width="13" height="13">
-        <img class="minus-right" src="images/popover/minus.svg" alt="" width="13" height="1">
-        <input class="people-counter" type="number" id="kids" value="0" name="kids">
-      </span>
-      </span>
+          <div class="people-counter">
+            <div class="wrapper-counter">
+              <!--<img class="plus-right" src="images/popover/plus.svg" alt="" width="13" height="13">
+              <img class="minus-right" src="images/popover/minus.svg" alt="" width="13" height="1">-->
+              <button class="pop-up-buttons pop-up-button-minus">
+                <span class="visually-hidden">минус</span>
+              </button>
+              <input class="people-counter" type="number" id="kids" value="0" name="kids">
+              <button class="pop-up-buttons pop-up-button-plus">
+                <span class="visually-hidden">плюс</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
       <button class="pop-over-button">Найти</button>
