@@ -1632,7 +1632,9 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 55px;
 }
+
 
 .pop-header {
   margin: 0;
@@ -1648,24 +1650,28 @@ img {
   cursor: pointer;
 }
 
+.pop-checkout-date,
 .pop-checkin-date {
-  margin: 54px 0 40px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  margin-bottom: 40px;
 }
 
-.pop-checkout-date {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .pop-header-inside {
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
+}
+
+.label-control {
+  width: 155px;
+  display: block;
+}
+
+.pop-up-inside-children {
+  width: 54px;
+  margin-left: 56px
 }
 
 .checkin,
@@ -1684,12 +1690,6 @@ img {
   letter-spacing: 0;
 }
 
-.people-count {
-  margin: 40px 0 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .people-count-right {
   display: flex;
@@ -1698,18 +1698,22 @@ img {
 
 .wrapper-counter {
   position: relative;
+  display: flex;
+  width: 119px;
+  overflow: hidden;
+  border-radius: 4px;
 }
 
-.minus {
+/*.minus {
   display: block;
   padding: 19px 5px 19px 19px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-}
+}*/
 
-.plus {
+/*.plus {
   display: block;
   padding: 19px 19px 19px 5px;
   position: absolute;
@@ -1717,13 +1721,32 @@ img {
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
+}*/
+
+.people-count {
+  display: flex;
+}
+
+.pop-up-buttons {
+  border: none;
+  background-color: #F2F2F2;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  width: 40px;
+}
+
+.pop-up-button-minus {
+  background-image: url("../images/popover/minus.svg");
+}
+
+.pop-up-button-plus {
+  background-image: url("../images/popover/plus.svg");
 }
 
 .people-counter {
-  width: 119px;
+  width: 40px;
   height: 50px;
   background-color: #F2F2F2;
-  border-radius: 4px;
   border: none;
   box-sizing: border-box;
   text-align: center;
@@ -1861,3 +1884,4 @@ input[type=number] {
 .information-icon:hover {
   opacity: 0.8;
 }
+
